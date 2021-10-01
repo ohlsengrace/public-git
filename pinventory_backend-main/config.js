@@ -1,11 +1,11 @@
 
 module.exports =  function(env){
     if(env == 'production'){
-        return "postgres://postgres:M3ss3ng3rS3rvic3@localhost:5432/pinventory"
+        return "postgres://pinventory" //incorrect but not shown for security reasons
     }else if(env == 'development') {
-        return "postgres://postgres:M3ss3ng3rS3rvic3@localhost:5432/pinventory_dev"
+        return "postgres://pinventory_dev" //incorrect but not shown for security reasons
     }else if(env == 'local'){
-        return "postgres://postgres:M3ss3ng3rS3rvic3@localhost:5432/pinventory_dev"
+        return "postgres://pinventory_dev" //incorrect but not shown for security reasons
     }
 }
 
