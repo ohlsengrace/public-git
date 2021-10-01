@@ -8,8 +8,8 @@ const https = require('https');
 
         const options = {
             hostname: 'powerschool.psdr3.org',
-            port: 8443,
-            path: '/ords/ps/capstone/students/hs',
+            port: 0, // incorrect, not shown for privacy reasons
+            path: '', // not shown for privacy reasons
             method: 'GET'
         }
 
@@ -40,8 +40,8 @@ try{
 
     const options = {
         hostname: 'powerschool.psdr3.org',
-        port: 8443,
-        path: '/ords/ps/capstone/voting',
+        port: 0, // incorrect, not shown for privacy reasons
+        path: '', // not shown for privacy reasons
         method: 'GET'
     }
 
