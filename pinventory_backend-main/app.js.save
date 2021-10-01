@@ -1,0 +1,117 @@
+const express = require('express')
+const cors = require('cors')
+const app = express()
+const port = process.env.PORT || 3000
+const db = require('./queries.js');
+const hostname = process.env.HOST;
+
+
+//Middleware
+app.use(express.json());
+app.use(cors());
+
+//Authentication
+app.use('/', function (req, res, next) {
+    console.log('using middleware');
+    const id_token = req.headers['authorization'];
+
+    if(id_token){
+
+        const split = id_token.split(' ');
+        const token = (split[1]);
+        console.log(token);
+
+        let user = {};
+        async function verify(){
+            const ticket = await client.verifyIdToken({
+                idToken: token,
+                audience: CLIENT_ID,
+            });
+            const payload = ticket.getPayload();
+            user.name = payload.name;
+            user.email = payload.email;
+            user.picture = payload.picture;
+            console.log(payload)
+        }
+        verify()
+            .then(() =>{
+                
+                next();
+            })
+            .catch(err=>{
+                console.log(err);
+                res.set(401).send("unauthorized")
+            })
+
+    }
+    else{ res.set(401).send('No token was provided'); }
+})
+
+
+//books
+app.get('/search/books', db.bookQuery.getAll);
+app.get('/search/books/checkout', db.bookQuery.getAllCheckedOut);
+app.get('/search/books/student', db.bookQuery.getBooksByStudent);
+app.post('/checkins', db.bookQuery.checkIn);
+app.post('/checkouts', db.bookQuery.checkOut);
+
+// textbook_sets
+
+
+app.get('/', (req,res) =>{
+    res.set(200).send(process.env.SOME_STRING);
+})
+
+
+//==================================
+//Google Sign in
+//==================================
+
+//Google Auth
+const {OAuth2Client} = require('google-auth-library');
+const CLIENT_ID = '180374672702-vad12pe1q4og9dr4mjra0hrsj57ol1im.apps.googleusercontent.com'
+const client = new OAuth2Client(CLIENT_ID);
+
+// login
+// app.post('/login', (req, res)=>{
+//
+//     let id_token = req.headers['authorization'];
+//     const split = id_token.split(' ');
+//     const token = (split[1]);
+//
+//     async function verify() {
+//         const ticket = await client.verifyIdToken({
+//             idToken: token,
+//             audience: CLIENT_ID,
+//         });
+//         const payload = ticket.getPayload();
+//         const userid = payload['sub'];
+//     }
+//     verify()
+//         .then(()=>{
+//             res.send('success');
+//         }).
+//     catch(console.error);
+// })
+
+//logout
+// app.get('/logout', (req, res) => {
+//     res.redirect('/login')
+// })
+
+//dashboard
+app.get('/dashboard', (req, res)=>{
+    let user = req.user;
+    console.log(user.email)
+})
+
+//protectedroute
+app.get('/protectedroute', (req,res)=>{
+    res.send(user.payload)
+})
+
+
+app.listen(port, () => {
+    console.log('Server running on port %d', port);
+ })
+

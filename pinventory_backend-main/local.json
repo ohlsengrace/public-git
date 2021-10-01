@@ -1,0 +1,15 @@
+{
+  "apps" : [
+    {
+      "name": "pinventory-backend-local",
+      "script": "./app.js",
+      "env": {
+        "PORT": 3002,
+        "HOST": "localhost",
+        "NODE_ENV": "local",
+        "CONFIG_FILE": "config.js",
+        "SOME_STRING" : "This is from local."
+      }
+    }
+  ]
+}

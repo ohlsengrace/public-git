@@ -1,0 +1,14 @@
+{
+  "apps" : [
+    {
+      "name": "pinventory-backend",
+      "script": "./app.js",
+      "env": {
+        "PORT": 3001,
+        "HOST": "localhost",
+        "NODE_ENV": "production",
+        "SOME_STRING": "This is from production"
+      }
+    }
+  ]
+}

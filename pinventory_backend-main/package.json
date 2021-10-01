@@ -1,0 +1,39 @@
+{
+  "name": "pinventory_backend",
+  "version": "1.0.0",
+  "description": "This is the backend for the pinventory web portal.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pattonville-app-development-team/pinventory_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pattonville-app-development-team/pinventory_backend/issues"
+  },
+  "homepage": "https://github.com/pattonville-app-development-team/pinventory_backend#readme",
+  "dependencies": {
+    "bwip-js": "^2.1.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "fast-csv": "^4.3.6",
+    "fs": "0.0.1-security",
+    "google-auth-library": "^6.1.6",
+    "google-oauth-jwt": "^0.2.0",
+    "googleapis": "^67.1.1",
+    "jsbarcode": "^3.11.3",
+    "multer": "^1.4.2",
+    "neat-csv": "^6.0.1",
+    "node-cron": "^2.0.3",
+    "pdfmake": "^0.1.71",
+    "pg-promise": "^10.7.0",
+    "pg-protocol": "^1.4.0",
+    "pm2": "^5.1.1"
+  }
+}
