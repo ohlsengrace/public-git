@@ -7,7 +7,10 @@
 
 using namespace std;
 
-/* DESCRIPTION GOES HERE */ 
+/* In this project, you have been contracted by an online music streaming service that contains a collection of songs from an eclectic bunch of music artists. 
+Your client would like to begin doing data analysis on their listener base, and would like to create a software program for managing a database of songs and listeners. 
+Your client currently has information about both Songs and Listeners typed into simple text files. Your job is to create a C++ software package that 
+provides necessary functionality for manipulating both Song and Listener objects, and providing simple data analysis features. */ 
 
 
 
