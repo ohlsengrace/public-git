@@ -1,6 +1,6 @@
 //Project 3
 //Grace Ohlsen and Justin Jamrowski
-# Project3
+# Project3 (CSCI 1300 - FALL 2021)
 
 DEFEAT THE METAVERSE: A TEXT-BASED ESCAPE ROOM GAME
 Zuckerberg's Metaverse has taken over the world and entrapped society in a virtual dystopia. Your job is to deactivate the Metaverse
