@@ -2,6 +2,11 @@
 //Grace Ohlsen and Justin Jamrowski
 # Project3 (CSCI 1300 - FALL 2021)
 
+Link to Gameplay video:
+https://drive.google.com/file/d/1lVnak9i0e1s_aXcLIk142pw6IdNETk94/view?usp=sharing
+Must have CU email to access. If you want to view it, just contact me and I'll give you access.
+
+
 DEFEAT THE METAVERSE: A TEXT-BASED ESCAPE ROOM GAME
 Zuckerberg's Metaverse has taken over the world and entrapped society in a virtual dystopia. Your job is to deactivate the Metaverse
 computer and save the world. Explore the map to collect the password and destruction file while avoiding viruses along the way.
