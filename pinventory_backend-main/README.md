@@ -4,7 +4,7 @@ Pinventory
 -----------------------
 In Fall 2020, I was enrolled in the Capstone Development team at my high school. Our team consisted of 6 people. Each year, the team creates a project that benefits the district.
 
-The administration came to us saying that they were struggling with a lack of infrastruture for tracking textbooks. With Covid and online school, books were given out and not kept track of. The district lost an unknown, probably alarming, amount of money from textbooks that were unaccounted for at the end of the year. They wanted a change from the pen and paper tracking system that they currently were using but still needed a system that was quick and effective.
+The administration came to us saying that they were struggling with a lack of infrastruture for tracking textbooks. With Covid and online school, books were given out and not kept track of. The district lost an unknown, probably alarming, amount of money from textbooks that were unaccounted for at the end of the year. They wanted a change from the pen and paper tracking system that they had been using. They communicated their need for a system that was quick and effective.
 
 For the administration and school district, the Capstone team came up with Pinventory.
 
